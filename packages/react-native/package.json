@@ -1,6 +1,6 @@
 {
   "name": "@securelink/react-native",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "SecureLink React Native client SDK (iOS App Attest / Android Play Integrity)",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -13,7 +13,9 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --clean",
     "typecheck": "tsc -p tsconfig.json --noEmit"
@@ -28,11 +30,37 @@
     "expo-secure-store": ">=12.0.0"
   },
   "peerDependenciesMeta": {
-    "react-native-keychain": { "optional": true },
-    "expo-secure-store": { "optional": true }
+    "react-native-keychain": {
+      "optional": true
+    },
+    "expo-secure-store": {
+      "optional": true
+    }
   },
   "publishConfig": {
     "access": "public"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://secure-link-connection-docs.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grey-Wallet/SecureLinkConnection.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Grey-Wallet/SecureLinkConnection/issues"
+  },
+  "keywords": [
+    "securelink",
+    "security",
+    "authentication",
+    "anonymous",
+    "customAuth",
+    "attestation",
+    "rate-limit",
+    "react-native",
+    "ios",
+    "android",
+    "app-attest",
+    "play-integrity"
+  ]
 }

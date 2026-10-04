@@ -1,6 +1,6 @@
 {
   "name": "@securelink/server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "SecureLink Node.js server SDK — verify, security context, rate limits",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -13,7 +13,9 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --clean",
     "typecheck": "tsc -p tsconfig.json --noEmit"
@@ -25,5 +27,25 @@
   "publishConfig": {
     "access": "public"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://secure-link-connection-docs.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grey-Wallet/SecureLinkConnection.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Grey-Wallet/SecureLinkConnection/issues"
+  },
+  "keywords": [
+    "securelink",
+    "security",
+    "authentication",
+    "anonymous",
+    "customAuth",
+    "attestation",
+    "rate-limit",
+    "server",
+    "nodejs",
+    "express"
+  ]
 }

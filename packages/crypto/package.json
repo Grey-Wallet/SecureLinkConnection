@@ -1,6 +1,6 @@
 {
   "name": "@securelink/crypto",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "SecureLink cryptographic primitives and abstractions",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -27,5 +27,25 @@
   "publishConfig": {
     "access": "public"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://secure-link-connection-docs.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grey-Wallet/SecureLinkConnection.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Grey-Wallet/SecureLinkConnection/issues"
+  },
+  "keywords": [
+    "securelink",
+    "security",
+    "authentication",
+    "anonymous",
+    "customAuth",
+    "attestation",
+    "rate-limit",
+    "crypto",
+    "ed25519",
+    "hmac"
+  ]
 }
