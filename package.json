@@ -1,0 +1,32 @@
+{
+  "name": "securelink",
+  "private": true,
+  "version": "0.0.0",
+  "description": "SecureLink — client-to-server security and communication SDK",
+  "packageManager": "pnpm@11.17.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "pnpm -r --filter './packages/*' run build",
+    "todo:server": "pnpm --filter @securelink/todo-server start",
+    "todo:web": "pnpm --filter @securelink/todo-web dev",
+    "todo:extension": "pnpm --filter @securelink/todo-extension build",
+    "todo:mobile": "pnpm --filter @securelink/todo-mobile start",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "pnpm -r --filter './packages/*' run typecheck",
+    "lint": "pnpm -r --filter './packages/*' run typecheck",
+    "clean": "pnpm -r exec rm -rf dist",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.11",
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8",
+    "tsup": "^8.3.5"
+  }
+}

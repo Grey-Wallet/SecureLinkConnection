@@ -1,0 +1,26 @@
+{
+  "name": "@securelink/protocol",
+  "version": "0.1.0",
+  "description": "SecureLink protocol types, versioning, and errors",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run --dir src"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}

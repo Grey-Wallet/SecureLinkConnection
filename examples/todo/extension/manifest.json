@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "SecureLink Todo",
+  "description": "Example todo extension using @securelink/extension",
+  "version": "0.1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "SecureLink Todo"
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["http://127.0.0.1:8787/*", "http://localhost:8787/*"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

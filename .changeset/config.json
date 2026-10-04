@@ -1,0 +1,21 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@3.0.3/schema.json",
+  "changelog": "@changesets/cli/changelog",
+  "commit": false,
+  "fixed": [],
+  "linked": [
+    [
+      "@securelink/protocol",
+      "@securelink/crypto",
+      "@securelink/core",
+      "@securelink/web",
+      "@securelink/react-native",
+      "@securelink/extension",
+      "@securelink/server"
+    ]
+  ],
+  "access": "public",
+  "baseBranch": "main",
+  "updateInternalDependencies": "patch",
+  "ignore": []
+}

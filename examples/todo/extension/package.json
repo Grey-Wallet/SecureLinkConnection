@@ -1,0 +1,18 @@
+{
+  "name": "@securelink/todo-extension",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@securelink/extension": "workspace:*",
+    "@securelink/core": "workspace:*"
+  },
+  "devDependencies": {
+    "vite": "^6.0.6",
+    "vite-plugin-static-copy": "^2.2.0"
+  }
+}

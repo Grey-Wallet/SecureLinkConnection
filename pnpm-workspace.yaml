@@ -1,0 +1,9 @@
+packages:
+  - "packages/*"
+  - "examples/todo/*"
+
+allowBuilds:
+  esbuild: true
+
+onlyBuiltDependencies:
+  - esbuild

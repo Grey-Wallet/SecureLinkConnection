@@ -1,0 +1,38 @@
+{
+  "name": "@securelink/react-native",
+  "version": "0.1.0",
+  "description": "SecureLink React Native client SDK (iOS App Attest / Android Play Integrity)",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@securelink/core": "workspace:*",
+    "@securelink/protocol": "workspace:*",
+    "@securelink/crypto": "workspace:*"
+  },
+  "peerDependencies": {
+    "react-native-keychain": ">=8.0.0",
+    "expo-secure-store": ">=12.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react-native-keychain": { "optional": true },
+    "expo-secure-store": { "optional": true }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}

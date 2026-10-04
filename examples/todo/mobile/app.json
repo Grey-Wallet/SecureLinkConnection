@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "SecureLink Todo",
+    "slug": "securelink-todo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "platforms": ["ios", "android"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.securelink.todo"
+    },
+    "android": {
+      "package": "com.securelink.todo"
+    }
+  }
+}
