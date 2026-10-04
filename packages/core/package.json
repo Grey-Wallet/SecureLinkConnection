@@ -1,6 +1,6 @@
 {
   "name": "@securelink/core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "SecureLink shared client foundation",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -13,7 +13,9 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --clean",
     "typecheck": "tsc -p tsconfig.json --noEmit"
