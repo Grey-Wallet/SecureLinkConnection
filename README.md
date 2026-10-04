@@ -1,6 +1,6 @@
 # SecureLink SDK
 
-Public SDK monorepo: packages, examples, tests, architecture.
+Public SDK monorepo: packages, examples, and tests.
 
 **GitHub:** public repo (everyone can view, only owners can edit)  
 **Sibling project:** docs site lives in a **separate private** repo → deployed on Vercel (public website).
